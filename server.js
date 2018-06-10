@@ -1,6 +1,6 @@
 var app = require('express')(),
-// port = process.env.PORT || 3000;
-port = 3000;
+port = process.env.PORT || 3000;
+// port = 3000;
 
 app.get('/',function(req,res){
 	res.sendFile(__dirname + "/index.html", "utf-8");
